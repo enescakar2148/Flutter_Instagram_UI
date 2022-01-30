@@ -45,6 +45,7 @@ class storyItem extends StatelessWidget {
             width: 80,
             child: Text(
               name,
+              textAlign: TextAlign.center,
               style: const TextStyle(
                   color: white, overflow: TextOverflow.ellipsis),
             ),

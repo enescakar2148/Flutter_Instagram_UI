@@ -26,23 +26,23 @@ class _RootState extends State<Root> {
 
   Widget Body() {
     List<Widget> pages = [
-      HomePageScreen(),
-      Center(
+      const HomePageScreen(),
+      const Center(
         child: Text("Search Screen",
             style: TextStyle(
                 fontSize: 20, fontWeight: FontWeight.bold, color: white)),
       ),
-      Center(
+      const Center(
         child: Text("Upload Screen",
             style: TextStyle(
                 fontSize: 20, fontWeight: FontWeight.bold, color: white)),
       ),
-      Center(
+      const Center(
         child: Text("Activity Screen",
             style: TextStyle(
                 fontSize: 20, fontWeight: FontWeight.bold, color: white)),
       ),
-      Center(
+      const Center(
         child: Text("Account Screen",
             style: TextStyle(
                 fontSize: 20, fontWeight: FontWeight.bold, color: white)),
@@ -59,7 +59,7 @@ class _RootState extends State<Root> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             SvgPicture.asset("assets/images/camera_icon.svg", width: 30),
-            Text("Instagram",
+            const Text("Instagram",
                 style: TextStyle(fontFamily: "Billabong", fontSize: 34)),
             SvgPicture.asset("assets/images/message_icon.svg", width: 30)
           ],
@@ -71,17 +71,17 @@ class _RootState extends State<Root> {
       return AppBar(
           backgroundColor: appBarColor,
           centerTitle: true,
-          title: Text("Upload"));
+          title: const Text("Upload"));
     } else if (pageIndex == 3) {
       return AppBar(
           backgroundColor: appBarColor,
           centerTitle: true,
-          title: Text("Activity"));
+          title: const Text("Activity"));
     } else {
       return AppBar(
           backgroundColor: appBarColor,
           centerTitle: true,
-          title: Text("Account"));
+          title: const Text("Account"));
     }
   }
 

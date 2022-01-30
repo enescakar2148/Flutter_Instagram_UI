@@ -1,11 +1,10 @@
 List posts = [
   {
     "id": 1,
-    "name": "panhchaneath_ung",
+    "name": "enescakar2148",
     "profileImg":
-        "https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Z2lybHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-    "postImg":
-        "https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Z2lybHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+        "https://instagram.fsaw2-2.fna.fbcdn.net/v/t51.2885-19/s320x320/267369531_619553022524921_2550059525139476428_n.jpg?_nc_ht=instagram.fsaw2-2.fna.fbcdn.net&_nc_cat=105&_nc_ohc=6EUP7CG0Oy4AX_ptrz6&tn=rVpO7N6mZ-EtAL9g&edm=ABfd0MgBAAAA&ccb=7-4&oh=00_AT81voDfkX_fA38CNtztF6Lgy4sOs3cvcKgBhsNHirj_ZA&oe=61FD5A0D&_nc_sid=7bff83",
+    "postImg": "https://avatars.githubusercontent.com/u/49566840?v=4",
     "caption": " SERIOUS MODE during SERIOUS RAINY DAY",
     "isLoved": true,
     "commentCount": "10",
