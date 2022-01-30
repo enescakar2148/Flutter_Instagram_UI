@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:instagran_ui/screens/homepage_screen.dart';
 import 'package:instagran_ui/themes/colors.dart';
 // import 'package:ig_ui_app/pages/home_page.dart';
 // import 'package:ig_ui_app/pages/search_page.dart';
@@ -17,8 +18,37 @@ class _RootState extends State<Root> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(),
+      body: Body(),
+      backgroundColor: black,
       bottomNavigationBar: bottomNavBar(),
     );
+  }
+
+  Widget Body() {
+    List<Widget> pages = [
+      HomePageScreen(),
+      Center(
+        child: Text("Search Screen",
+            style: TextStyle(
+                fontSize: 20, fontWeight: FontWeight.bold, color: white)),
+      ),
+      Center(
+        child: Text("Upload Screen",
+            style: TextStyle(
+                fontSize: 20, fontWeight: FontWeight.bold, color: white)),
+      ),
+      Center(
+        child: Text("Activity Screen",
+            style: TextStyle(
+                fontSize: 20, fontWeight: FontWeight.bold, color: white)),
+      ),
+      Center(
+        child: Text("Account Screen",
+            style: TextStyle(
+                fontSize: 20, fontWeight: FontWeight.bold, color: white)),
+      )
+    ];
+    return IndexedStack(index: pageIndex, children: pages);
   }
 
   Widget appBar() {
@@ -36,9 +66,7 @@ class _RootState extends State<Root> {
         ),
       );
     } else if (pageIndex == 1) {
-      return AppBar(
-        backgroundColor: appBarColor,
-      );
+      return null;
     } else if (pageIndex == 2) {
       return AppBar(
           backgroundColor: appBarColor,
