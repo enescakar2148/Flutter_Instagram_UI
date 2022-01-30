@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:instagran_ui/screens/homepage_screen.dart';
+import 'package:instagran_ui/screens/search_page.dart';
 import 'package:instagran_ui/themes/colors.dart';
 // import 'package:ig_ui_app/pages/home_page.dart';
 // import 'package:ig_ui_app/pages/search_page.dart';
@@ -27,11 +28,7 @@ class _RootState extends State<Root> {
   Widget Body() {
     List<Widget> pages = [
       const HomePageScreen(),
-      const Center(
-        child: Text("Search Screen",
-            style: TextStyle(
-                fontSize: 20, fontWeight: FontWeight.bold, color: white)),
-      ),
+      SearchPage(),
       const Center(
         child: Text("Upload Screen",
             style: TextStyle(
