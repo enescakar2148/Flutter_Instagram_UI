@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:instagran_ui/themes/colors.dart';
 
-class storyItem extends StatelessWidget {
+class StoryItem extends StatelessWidget {
   final String img;
   final String name;
-  const storyItem({
+  const StoryItem({
     Key key,
     this.img,
     this.name,
